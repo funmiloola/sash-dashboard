@@ -96,9 +96,8 @@ const props = defineProps({
   <div class="border border-white shadow-xl">
     <div class="border-b-1 border-[#c1c4c4]">
       <div class="flex items-center md:justify-between gap-4">
-        <div class=" block md:hidden pl-2 cursor-pointer  " @click="props.toggleSidebar" >
+        <div class=" block md:hidden  cursor-pointer  " @click="props.toggleSidebar" >
           <img src="../assets/Icons/solar--hamburger-menu-linear.svg" alt="" class="w-12 h-12 "  >
-           
         </div>
         <div
           class="flex items-center gap-0.5 border border-[#c1c4c4] ml-4 pl-2 rounded-lg hover:bg-gray-100 cursor-pointer"
