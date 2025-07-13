@@ -69,13 +69,15 @@ onMounted(() => {
       datasets: [
         {
           data: [374.82, 241.6, 213.42],
-          backgroundColor: ["#c1c4c4", "#3fa9f5", "#7c5ce1"],
+          backgroundColor: ["#5347CE", "#3fa9f5", "#c1c4c4"],
           borderWidth: 4,
           cutout: "70%",
         },
       ],
     },
     options: {
+     circumference: 180,     
+      rotation: -90,       
       plugins: {
         legend: { display: false },
       },
@@ -296,11 +298,11 @@ const props = defineProps({
           <!-- Oct -->
           <div class="flex flex-col items-center">
             <div class="flex flex-col justify-end gap-1 w-10 sm:w-20 h-26">
-              <div class="bg-blue-900 h-2 rounded"></div>
-              <div class="bg-blue-700 h-4 rounded"></div>
-              <div class="bg-blue-500 h-8 rounded"></div>
-              <div class="bg-blue-300 h-10 rounded"></div>
-              <div class="bg-teal-300 h-12 rounded"></div>
+              <div class="bg-[#16C8C7] h-2 rounded"></div>
+              <div class="bg-[#23bdbd] h-4 rounded"></div>
+              <div class="bg-[#4896FE] h-8 rounded"></div>
+              <div class="bg-[#887CFD] h-10 rounded"></div>
+              <div class="bg-[#5347CE] h-12 rounded"></div>
             </div>
             <p class="text-xs mt-1">$2,988.20</p>
             <p class="text-xs text-gray-500">Oct</p>
@@ -309,11 +311,11 @@ const props = defineProps({
           <!-- Nov -->
           <div class="flex flex-col items-center">
             <div class="flex flex-col justify-end gap-1 w-10 sm:w-20 h-20">
-              <div class="bg-blue-900 h-18 rounded"></div>
-              <div class="bg-blue-700 h-22 rounded"></div>
-              <div class="bg-blue-500 h-12 rounded"></div>
-              <div class="bg-blue-300 h-14 rounded"></div>
-              <div class="bg-teal-300 h-12 rounded"></div>
+              <div class="bg-[#16C8C7] h-18 rounded"></div>
+              <div class="bg-[#23bdbd] h-22 rounded"></div>
+              <div class="bg-[#4896FE] h-12 rounded"></div>
+              <div class="bg-[#887CFD] h-14 rounded"></div>
+              <div class="bg-[#5347CE] h-12 rounded"></div>
             </div>
             <p class="text-xs mt-1">$1,765.09</p>
             <p class="text-xs text-gray-500">Nov</p>
@@ -322,11 +324,11 @@ const props = defineProps({
           <!-- Dec -->
           <div class="flex flex-col items-center">
             <div class="flex flex-col justify-end gap-1 w-10 sm:w-20 h-34">
-              <div class="bg-blue-900 h-6 rounded"></div>
-              <div class="bg-blue-700 h-9 rounded"></div>
-              <div class="bg-blue-500 h-12 rounded"></div>
-              <div class="bg-blue-300 h-15 rounded"></div>
-              <div class="bg-teal-300 h-18 rounded"></div>
+              <div class="bg-[#16C8C7] h-6 rounded"></div>
+              <div class="bg-[#23bdbd] h-9 rounded"></div>
+              <div class="bg-[#4896FE] h-12 rounded"></div>
+              <div class="bg-[#887CFD] h-15 rounded"></div>
+              <div class="bg-[#5347CE] h-18 rounded"></div>
             </div>
             <p class="text-xs mt-1">$4,005.65</p>
             <p class="text-xs text-gray-500">Dec</p>
