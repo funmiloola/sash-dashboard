@@ -97,9 +97,9 @@ const props = defineProps({
 <template>
   <div class="border border-white shadow-xl">
     <div class="border-b-1 border-[#c1c4c4]">
-      <div class="flex items-center md:justify-between gap-4">
-        <div class=" block md:hidden  cursor-pointer  " @click="props.toggleSidebar" >
-          <img src="../assets/Icons/solar--hamburger-menu-linear.svg" alt="" class="w-12 h-12 "  >
+      <div class="flex items-center md:justify-between gap-2 sm:gap-4">
+        <div class=" block md:hidden  cursor-pointer pl-1  " @click="props.toggleSidebar" >
+          <img src="../assets/Icons/solar--hamburger-menu-linear.svg" alt="" class="sm:w-12 sm:h-12  w-6 h-6"  >
         </div>
         <div
           class="flex items-center gap-0.5 border border-[#c1c4c4] ml-4 pl-2 rounded-lg hover:bg-gray-100 cursor-pointer"
@@ -114,7 +114,7 @@ const props = defineProps({
             placeholder="Search"
           />
         </div>
-        <div class="flex gap-5 items-center">
+        <div class="flex gap-2 sm:gap-5 items-center">
           <div class="flex flex-col md:flex-row md:gap-4">
             <img
               src="../assets/Icons/ph--bag.svg"
@@ -133,7 +133,7 @@ const props = defineProps({
             />
           </div>
           <div
-            class="flex items-center gap-2 pr-4 md:pr-15 pl-4 my-2 border-l border-[#c1c4c4]"
+            class="flex items-center gap-2 pr-4 pl-2 md:pr-15 sm:pl-4 my-2 border-l border-[#c1c4c4]"
           >
             <div>
               <a href=""
@@ -144,10 +144,10 @@ const props = defineProps({
               /></a>
             </div>
             <div>
-              <p class="font-semibold text-sm md:text-xl">
+              <p class=" text-sm md:text-xl">
                 <a href="" class="">Young Alaska</a>
               </p>
-              <p class="text-sm md:text-xl">Business</p>
+              <p class="text-sm md:text-xl text-[#c1c4c4]">Business</p>
             </div>
           </div>
         </div>
@@ -169,12 +169,12 @@ const props = defineProps({
               alt=""
               class="w-5 h-5"
             />
-            <p>Oct18-Nov18</p>
+            <p class="text-[#c1c4c4]">Oct18-Nov18</p>
           </div>
           <div
             class="flex items-center border gap-1 px-2 py-1 bg-white rounded-e-lg border-[#c1c4c4] cursor-pointer"
           >
-            <p>Monthly</p>
+            <p class="text-[#c1c4c4]">Monthly</p>
             <img
               src="../assets/Icons/oui--arrow-down.svg"
               alt=""
@@ -190,7 +190,7 @@ const props = defineProps({
             alt=""
             class="w-5 h-5"
           />
-          <p>Filter</p>
+          <p class="text-[#c1c4c4]">Filter</p>
         </div>
         <div
           class="flex items-center border gap-1 px-2 py-1 bg-white rounded-lg border-[#c1c4c4] cursor-pointer"
@@ -200,7 +200,7 @@ const props = defineProps({
             alt=""
             class="w-5 h-5"
           />
-          <p>Export</p>
+          <p class="text-[#c1c4c4]">Export</p>
         </div>
       </div>
     </div>
@@ -219,7 +219,7 @@ const props = defineProps({
               alt=""
               class="w-6 h-6 bg-[#f3f9f9] border px-1 py-1 border-[#f3f9f9]"
             />
-            <p class="font-semibold">{{ item.name }}</p>
+            <p class="">{{ item.name }}</p>
           </div>
           <div>
             <img :src="item.icon" alt="" />
@@ -230,11 +230,11 @@ const props = defineProps({
           <div
             :class="
               index === 1
-                ? 'flex items-center border border-[#f8dff1] bg-[#f8dff1] px-1 rounded'
-                : 'flex items-center border border-[#dff8f8] bg-[#dff8f8] px-1 rounded'
+                ? 'flex items-center border border-[#f7edf4] bg-[#f7edf4] px-1 rounded'
+                : 'flex items-center border border-[#f5fefe] bg-[#f5fefe] px-1 rounded'
             "
           >
-            <p :class="index === 1 ? 'text-[#f590d9]' : 'text-[#96e8e8]'">
+            <p :class=" index === 1 ? 'text-[#f590d9] text-sm' : 'text-[#96e8e8] text-sm'">
               {{ item.perc }}
             </p>
             <img :src="item.icn" alt="" class="w-4 h-3" />
@@ -249,9 +249,9 @@ const props = defineProps({
           <div class="flex items-center gap-2">
             <img
               src="../assets/Icons/material-symbols--bar-chart-rounded.svg"
-              alt=""
+              alt="" class="bg-[#f3f9f9] border px-1 py-1 border-[#f3f9f9] w-8 h-8"
             />
-            <h3 class="font-semibold">Sales Overview</h3>
+            <h3 class="">Sales Overview</h3>
           </div>
           <div class="flex gap-2">
             <div class="flex items-center gap-1 px-2 bg-[#f3f9f9]">
@@ -260,7 +260,7 @@ const props = defineProps({
                 alt=""
                 class="w-4 h-4"
               />
-              <button class="text-sm hover:text-gray-600 cursor-pointer">
+              <button class="text-sm text-[#c1c4c4] hover:text-gray-600 cursor-pointer">
                 Filter
               </button>
             </div>
@@ -270,7 +270,7 @@ const props = defineProps({
                 alt=""
                 class="w-4 h-4"
               />
-              <button class="hover:text-gray-600 cursor-pointer text-sm">
+              <button class="hover:text-gray-600 cursor-pointer text-sm text-[#c1c4c4]">
                 Sort
               </button>
             </div>
@@ -282,7 +282,7 @@ const props = defineProps({
         <p class="text-2xl font-semibold">$9,257.51</p>
         <div class="flex gap-2 items-center pt-2">
           <div
-            class="flex flex-col sm:flex-row items-center border border-[#dff8f8] bg-[#dff8f8] px-auto sm:px-1 rounded"
+            class="flex flex-col sm:flex-row items-center border border-[#f5fefe] bg-[#f5fefe] px-auto sm:px-1 rounded"
           >
             <p class="text-[#96e8e8]">15.5%</p>
             <img
@@ -297,40 +297,40 @@ const props = defineProps({
         <div class="flex justify-between items-end h-40 mt-6">
           <!-- Oct -->
           <div class="flex flex-col items-center">
-            <div class="flex flex-col justify-end gap-1 w-10 sm:w-20 h-26">
+             <p class="text-xs mt-1">$2,988.20</p>
+            <div class="flex flex-col justify-end gap-1 w-10 sm:w-30 h-26">
               <div class="bg-[#16C8C7] h-2 rounded"></div>
               <div class="bg-[#23bdbd] h-4 rounded"></div>
               <div class="bg-[#4896FE] h-8 rounded"></div>
               <div class="bg-[#887CFD] h-10 rounded"></div>
               <div class="bg-[#5347CE] h-12 rounded"></div>
             </div>
-            <p class="text-xs mt-1">$2,988.20</p>
             <p class="text-xs text-gray-500">Oct</p>
           </div>
 
           <!-- Nov -->
           <div class="flex flex-col items-center">
-            <div class="flex flex-col justify-end gap-1 w-10 sm:w-20 h-20">
+            <p class="text-xs mt-1">$1,765.09</p>
+            <div class="flex flex-col justify-end gap-1 w-10 sm:w-30 h-20">
               <div class="bg-[#16C8C7] h-18 rounded"></div>
               <div class="bg-[#23bdbd] h-22 rounded"></div>
               <div class="bg-[#4896FE] h-12 rounded"></div>
               <div class="bg-[#887CFD] h-14 rounded"></div>
               <div class="bg-[#5347CE] h-12 rounded"></div>
             </div>
-            <p class="text-xs mt-1">$1,765.09</p>
             <p class="text-xs text-gray-500">Nov</p>
           </div>
 
           <!-- Dec -->
           <div class="flex flex-col items-center">
-            <div class="flex flex-col justify-end gap-1 w-10 sm:w-20 h-34">
+             <p class="text-xs mt-1">$4,005.65</p>
+            <div class="flex flex-col justify-end gap-1 w-10 sm:w-30 h-34">
               <div class="bg-[#16C8C7] h-6 rounded"></div>
               <div class="bg-[#23bdbd] h-9 rounded"></div>
               <div class="bg-[#4896FE] h-12 rounded"></div>
               <div class="bg-[#887CFD] h-15 rounded"></div>
               <div class="bg-[#5347CE] h-18 rounded"></div>
             </div>
-            <p class="text-xs mt-1">$4,005.65</p>
             <p class="text-xs text-gray-500">Dec</p>
           </div>
         </div>
@@ -364,9 +364,9 @@ const props = defineProps({
             <img
               src="../assets/Icons/ic--outline-people.svg"
               alt=""
-              class="w-4 h-4"
+              class="w-8 h-8 bg-[#f3f9f9] border px-1 py-1 border-[#f3f9f9] "
             />
-            <h3 class="font-semibold">Total Subscriber</h3>
+            <h3 class="">Total Subscriber</h3>
           </div>
           <div
             class="flex items-center px-1 bg-[#f3f9f9] border-gray-300 rounded"
@@ -384,7 +384,7 @@ const props = defineProps({
         <p class="text-2xl font-semibold">24,473</p>
         <div class="flex gap-2 items-center pt-2">
           <div
-            class="flex items-center border border-[#dff8f8] bg-[#dff8f8] px-1 rounded"
+            class="flex items-center border border-[#f5fefe] bg-[#f5fefe] px-1 rounded"
           >
             <p class="text-[#96e8e8]">8.3%</p>
             <img
@@ -397,7 +397,7 @@ const props = defineProps({
         </div>
 
         <!-- Bar chart -->
-        <div class="flex justify-between items-end h-32 mt-6">
+        <div class="flex justify-between items-end h-32 mt-20">
           <div class="flex flex-col items-center">
             <div class="bg-gray-300 w-6 h-6 rounded"></div>
             <p class="text-xs mt-1">Sun</p>
@@ -431,7 +431,7 @@ const props = defineProps({
         </div>
       </div>
     </section>
-    <div class="p-6 bg-gray-50 min-h-screen">
+    <div class="px-6 pt-6 pb-3 bg-gray-50 ">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <!-- Sales Distribution Card -->
         <div class="bg-white rounded-2xl shadow p-4">
@@ -440,12 +440,12 @@ const props = defineProps({
               <img
                 src="../assets/Icons/hugeicons--distribution.svg"
                 alt=""
-                class="w-4 h-4"
+                class="w-8 h-8 bg-[#f3f9f9] border px-1 py-1 border-[#f3f9f9] "
               />
               <h2 class="text-sm font-medium">Sales Distribution</h2>
             </div>
             <div class="flex items-center gap-1 px-2 bg-[#f3f9f9]">
-              <p class="cursor-pointer text-sm">Monthly</p>
+              <p class="cursor-pointer text-sm text-[#c1c4c4]">Monthly</p>
               <img
                 src="../assets/Icons/oui--arrow-down.svg"
                 alt=""
@@ -497,11 +497,11 @@ const props = defineProps({
             <div class="flex items-center gap-2">
               <img
                 src="../assets/Icons/fluent--arrow-swap-16-regular.svg"
-                alt=""
+                alt="" class="w-8 h-8 bg-[#f3f9f9] border px-1 py-1 border-[#f3f9f9] "
               />
               <h2 class="text-sm font-medium">List of Integration</h2>
             </div>
-            <a href="#" class="text-sm text-blue-500">See All</a>
+            <a href="#" class="text-sm text-[#5347CE]">See All</a>
           </div>
           <table
             class="w-full text-sm text-left min-w-full border-separate border-spacing-y-2"
@@ -551,6 +551,7 @@ const props = defineProps({
                       :style="{ width: item.rate + '%' }"
                     ></div>
                   </div>
+                  
                 </td>
                 <td class="font-semibold px-4 py-3 block sm:table-cell">
                   <span class="block font-semibold text-gray-400 sm:hidden"

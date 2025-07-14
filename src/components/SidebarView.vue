@@ -48,27 +48,27 @@ const props = defineProps({
 });
 </script>
 <template>
-  <div class="w-1/4">
+  <div class="w-1/5">
     <div
       class="xl:hidden flex-col gap-8 fixed bg-white h-full left-2  z-40"
     >
     <div class="border-b-1 border-[#c1c4c4]">
       <div class="py-6">
-        <div class="flex justify-between items-center pl-2 pr-2 sm:pl-4 sm:pr-2">
+        <div class="flex justify-between items-center pl-0 pr-2 sm:pl-4 sm:pr-2">
           <div class="flex gap-1 items-center">
             <img
               src="../assets/Icons/arcticons--x-icon-changer.svg"
               alt=""
-              class="w-4 h-4 sm:w-8 sm:h-8" @click="props.toggleSidebar"
+              class="w-4 h-4 sm:w-8 sm:h-8"
             />
-           <a href="/" class=""> <p class="sm:text-2xl text-lg text-[#5347CE] sm:font-semibold">Nexus</p>
+           <a href="/" class=""> <p class="sm:text-2xl text-sm text-[#5347CE] sm:font-semibold">Nexus</p>
             </a>
           </div>
           <div>
             <img
               src="../assets/Icons/system-uicons--enter-alt.svg"
               alt=""
-              class="sm:w-6 sm:h-6 w-3 h-3"
+              class="sm:w-6 sm:h-6 w-6 h-6"  @click="props.toggleSidebar"
             />
           </div>
         </div>

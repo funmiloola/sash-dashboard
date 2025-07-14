@@ -37,7 +37,7 @@ const settings = ref([{img:icon10,name:'Settings'},{img:icon11,name:"Security"},
 <template>
   <div class="border border-white shadow-xl">
     <div class="border-b-1 border-[#c1c4c4]">
-      <div class="py-4">
+      <div class="py-5">
         <div class="flex justify-between items-center pl-4 pr-2">
           <div class="flex gap-1 items-center">
             <img
@@ -52,7 +52,7 @@ const settings = ref([{img:icon10,name:'Settings'},{img:icon11,name:"Security"},
             <img
               src="../assets/Icons/system-uicons--enter-alt.svg"
               alt=""
-              class="w-6 h-6"
+              class="w-8 h-8"
             />
           </div>
         </div>
@@ -65,7 +65,7 @@ const settings = ref([{img:icon10,name:'Settings'},{img:icon11,name:"Security"},
         :key="index"
         class="flex items-center gap-1 pt-2 pl-3 pr-2"
       >
-        <img :src="item.img" alt="" class="w-4 h-4" />
+        <img :src="item.img" alt="" class="w-6 h-6" />
         <div class="flex gap-12 items-center">
         <p><a href="">{{ item.name }}</a></p>
         <!-- <p class=""><a href="">{{ item.figure }}</a></p> -->
@@ -75,14 +75,14 @@ const settings = ref([{img:icon10,name:'Settings'},{img:icon11,name:"Security"},
     <div class="pb-8 border-b-1 border-[#c1c4c4]">
         <h3 class="text-[#c1c4c4] pt-4 pl-3"><a href="">TOOLS</a></h3>
         <div v-for="(tool,index) in tools" :key="index" class="flex items-center gap-2 pl-3 pt-2">
-            <img :src="tool.img" alt="" class="w-4 h-4"/>
+            <img :src="tool.img" alt="" class="w-6 h-6"/>
             <p><a href="">{{tool.name}}</a></p>
         </div>
     </div>
-    <div class="lg:pb-50 pb-396 sm:pb-212 ">
+    <div class="lg:pb-52 pb-396 sm:pb-212 ">
         <h4 class="text-[#c1c4c4] pt-4 pl-3"><a href="">SUPPORT</a></h4>
         <div v-for="(setting,index) in settings" :key="index" class="flex items-center gap-2 pl-3 pt-2">
-            <img :src="setting.img" alt="" class="w-4 h-4">
+            <img :src="setting.img" alt="" class="w-6 h-6">
             <p><a href="">{{setting.name}}</a></p>
         </div>
     </div>
